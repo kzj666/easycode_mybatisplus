@@ -3,6 +3,8 @@ package com.kk.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kk.entity.User;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
 /**
@@ -11,9 +13,10 @@ import java.util.List;
  * @author makejava
  * @since 2020-03-26 20:09:34
  */
+@Repository
 public interface UserDao extends BaseMapper<User> {
 
-    //继承了BaseMapper<>后，就可以用MyBatisPlus下的方法了
+    //继承了BaseMapper<User>后，就可以用MyBatisPlus下的方法了
 
     /**
      * 通过ID查询单条数据
