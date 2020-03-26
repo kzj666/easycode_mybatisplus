@@ -8,7 +8,7 @@
 > [MyBatisPlus官网](https://baomidou.oschina.io/mybatis-plus-doc/#/)
 
 
-## 其实很简单，先导入依赖
+### 其实很简单，先导入依赖
 
 ```xml
 <!--mysql-->
@@ -29,10 +29,9 @@
 </dependency>
 ```
    
-## 利用EasyCode生成代码，在UserDao接口上加上@Repository注解，然后让UserDao接口继承extends BaseMapper<User>
+### 利用EasyCode生成代码，在UserDao接口上加上@Repository注解，然后让UserDao接口继承extends BaseMapper<User>
 
 然后userDao就可以利用MyBatisPlus的方法了
 
-![](image/7b8ec079.png)
 
 MyBatisPlus的常用方法实例在test包下
