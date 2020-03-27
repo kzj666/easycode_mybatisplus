@@ -29,7 +29,15 @@
 </dependency>
 ```
    
-### 利用EasyCode生成代码，在UserDao接口上加上@Mapper注解，然后让UserDao接口继承extends BaseMapper<User>，在主启动类上加上@MapperScan("com.kk.dao")注解
+### 利用EasyCode生成代码，在UserDao接口上加上@Repository和@Mapper注解，然后让UserDao接口继承extends BaseMapper<User>，在主启动类上加上@MapperScan("com.kk.dao")注解
+
+配置一下别名和映射文件路径
+ 
+ ```xml
+  mybatis:
+  typeAliasesPackage: pojo路径
+  mapperLocations: classpath:mapper/*.xml
+  ```
 
 然后userDao就可以利用MyBatisPlus的方法了
 

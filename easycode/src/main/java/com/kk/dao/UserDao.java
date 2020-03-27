@@ -15,6 +15,7 @@ import java.util.List;
  * @since 2020-03-26 20:09:34
  */
 @Mapper
+@Repository
 public interface UserDao extends BaseMapper<User> {
 
     //继承了BaseMapper<User>后，就可以用MyBatisPlus下的方法了
